@@ -12,7 +12,6 @@ class TestParseArguments(unittest.TestCase):
         self.assertEquals(result.MFA, False)
         self.assertEquals(result.MFAtoken, None)
         self.assertEquals(result.profile, 'default')
-        self.assertEquals(result.AWSaccount, 'default')
 
     def test_parse_args_with_valid_options(self):
         """
@@ -22,4 +21,3 @@ class TestParseArguments(unittest.TestCase):
         self.assertEquals(result.MFA, False)
         self.assertEquals(result.MFAtoken[0], '073690')
         self.assertEquals(result.profile, 'bv_prod')
-        self.assertEquals(result.AWSaccount, 'default')
